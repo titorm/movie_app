@@ -49,5 +49,15 @@
       "json",
       "node"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint . --ext .js,.jsx,.ts,.tsx"
+    ]
   }
 }
